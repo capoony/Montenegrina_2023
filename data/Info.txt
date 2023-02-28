@@ -1,0 +1,14 @@
+
+I attach here the main data matrix in DAT format. All the taxa have been already marked by means of colour (representing the clade) and a symbol (representing a taxon).
+The matrix contains both quantitative data (from the column SH to BC) and qualitative data (from columns atrium_type to proximal_vagina_type concerning genitalia and from columns neck-inflection to plica_basalis for the shell). 
+For the quantitative data, all of them are in millimeters, except for W that stands for "number of whorls" and OA and LA that are measured in degrees. 
+As discussed with Lisi, the NJ with the quantitative data seems to be OK, except for the rooting that should be adjusted. 
+We'd like to obtain a tree also with the qualitative to see how taxa reciprocally spread and a sort of "concatenated" tree quantit+qualit.
+Of course you're free to play around and see what this matrix could also provide.
+Please find here the acronyms:
+Genitalia: A atrium, AT atrium type, BC bursa copulatrix, D diverticulum, DV distal vagina, E epiphallus, ET epiphallus type, FO free oviduct, IDVT inner distal vagina type, P penis, PC penial complex, PPT penial papilla type, PR proximal vagina, PT penis type, V vagina.
+Shell: AH aperture height, AW aperture width, BWH body whorl height, L lunella, LA lunella angle, LP lunella position, LSS lamella superior vs. spiralis, NI neck inflection (type), OA ornamentation (striae/ribs) angle, PB plica basalis (type), PPOS peristome position (type), SB subclaustralis bending (type), SH shell height, SMW shell maximum width, W number of whorls.
+I thank you very much in advance for you help which is - believe -  most appreciated.
+I hope to hear fromyou soon and do not hesitate to get in touch with me if needed.
+My kindest regards,
+Willy
