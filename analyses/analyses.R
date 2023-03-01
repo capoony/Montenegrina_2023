@@ -41,6 +41,7 @@ for (i in seq(1, nrow(DATA), 1)) {
 
 PLOT.tree <- ggtree(tree2, layout = "roundrect") +
     scale_color_manual(values = G) +
+    scale_fill_manual(values = G) +
     # geom_tiplab(aes(color = Color,
     #     	label=label,
     #         angle=0),
@@ -54,11 +55,11 @@ PLOT.tree <- ggtree(tree2, layout = "roundrect") +
         hjust = -0.1,
         show.legend = FALSE
     ) +
-    geom_tippoint(
+    geom_tippoint(aes(color = Color, fill = Color),
         pch = DATA$PCH,
         size = 2,
         stroke = 1,
-        fill = "black"
+        show.legend = FALSE
     ) +
     theme_tree2() +
     theme_bw() +
