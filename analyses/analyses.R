@@ -57,8 +57,6 @@ for (i in seq(1, nrow(DATA), 1)) {
     L[[DATA$Color[i]]] <- DATA$Subclade[i]
 }
 
-
-
 PLOT.tree <- ggtree(tree2, layout = "roundrect") +
     scale_color_manual(values = G, labels = L) +
     scale_fill_manual(values = G, labels = L) +
