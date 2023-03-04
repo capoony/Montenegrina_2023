@@ -15,6 +15,19 @@ DATA <- read.table("H:/Work/Projects/HaringL/Montenegrina_2023/data/Montenegrina
     comment.char = ""
 )
 
+Colorcode <- read.table("H:/Work/Projects/HaringL/Montenegrina_2023/data/ColorCode.txt",
+    header = TRUE,
+    sep = "\t",
+    comment.char = ""
+)
+
+Colorcode$color[Colorcode$subclade %in% DATA$Subclade]
+
+## replace Color Column based on Colorcode from Lisi
+DATA <- DATA %>%
+    select(-Color) %>%
+    left_join(Colorcode, by = c("Subclade" = "subclade"))
+
 ## focus on columns with Qualitative data and convert to factors
 DATA.matrix <- as.data.frame(DATA[, 7:ncol(DATA) - 1], stringsAsFactors = TRUE)
 DATA$Num <- seq(1, nrow(DATA), 1)
@@ -39,9 +52,16 @@ for (i in seq(1, nrow(DATA), 1)) {
     G[[DATA$Color[i]]] <- DATA$Color[i]
 }
 
+L <- list()
+for (i in seq(1, nrow(DATA), 1)) {
+    L[[DATA$Color[i]]] <- DATA$Subclade[i]
+}
+
+
+
 PLOT.tree <- ggtree(tree2, layout = "roundrect") +
-    scale_color_manual(values = G) +
-    scale_fill_manual(values = G) +
+    scale_color_manual(values = G, labels = L) +
+    scale_fill_manual(values = G, labels = L) +
     # geom_tiplab(aes(color = Color,
     #     	label=label,
     #         angle=0),
@@ -59,7 +79,7 @@ PLOT.tree <- ggtree(tree2, layout = "roundrect") +
         pch = DATA$PCH,
         size = 2,
         stroke = 1,
-        show.legend = FALSE
+        show.legend = TRUE
     ) +
     theme_tree2() +
     theme_bw() +
