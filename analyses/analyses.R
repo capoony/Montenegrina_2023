@@ -102,7 +102,7 @@ PLOT.tree <- ggtree(tree2, layout = "roundrect") +
     guides(
         shape = guide_legend(override.aes = list(fill = "black"))
     )
-PLOT.tree
+#PLOT.tree
 
 ## save trees as PNG and PDF
 ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/black_tree.pdf",
