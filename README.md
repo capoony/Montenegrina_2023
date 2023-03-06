@@ -5,4 +5,8 @@ The raw input data can be found [here](data\Montenegrina\ qualitative_data\ copy
 
 The resulting tree can be found here: 
 
-![tree](analyses/black_tree.png)
+![tree](analyses/tree.png)
+
+...and here is an circular version: 
+
+![tree](analyses/tree_circular.png)

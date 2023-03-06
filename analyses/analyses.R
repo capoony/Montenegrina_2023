@@ -87,8 +87,46 @@ PLOT.tree <- ggtree(tree2, layout = "roundrect") +
             angle = 0
         ),
         hjust = -0.1,
+        size = 2,
         show.legend = FALSE
     ) +
+
+    ## add colored symbols as tip-points according to clades
+    geom_tippoint(aes(color = Clade, fill = Clade, shape = Shape),
+        size = 1,
+        stroke = 1,
+        show.legend = TRUE
+    ) +
+    theme_tree2() +
+    theme_bw() +
+    xlim(0, 10) +
+    guides(
+        shape = guide_legend(override.aes = list(fill = "black"))
+    )
+# PLOT.tree
+
+## save trees as PNG and PDF
+ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/tree.pdf",
+    PLOT.tree,
+    width = 10,
+    height = 20
+)
+
+ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/tree.png",
+    PLOT.tree,
+    width = 10,
+    height = 20
+)
+
+## plot tree
+PLOT.tree <- ggtree(tree2, layout = "circular") +
+    ## Set scales manually
+    scale_color_manual(values = G, labels = L) +
+    scale_fill_manual(values = G, labels = L) +
+    scale_shape_manual(values = S) +
+
+    ## add tip labels
+    geom_tiplab2() +
 
     ## add colored symbols as tip-points according to clades
     geom_tippoint(aes(color = Clade, fill = Clade, shape = Shape),
@@ -98,21 +136,20 @@ PLOT.tree <- ggtree(tree2, layout = "roundrect") +
     ) +
     theme_tree2() +
     theme_bw() +
-    xlim(0, 20) +
     guides(
         shape = guide_legend(override.aes = list(fill = "black"))
     )
-#PLOT.tree
+PLOT.tree
 
 ## save trees as PNG and PDF
-ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/black_tree.pdf",
+ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/tree_circular.pdf",
     PLOT.tree,
-    width = 10,
-    height = 40
+    width = 25,
+    height = 25
 )
 
-ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/black_tree.png",
+ggsave("H:/Work/Projects/HaringL/Montenegrina_2023/analyses/tree_circular.png",
     PLOT.tree,
-    width = 10,
-    height = 40
+    width = 25,
+    height = 25
 )
