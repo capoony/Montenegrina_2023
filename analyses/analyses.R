@@ -7,6 +7,7 @@ library(phytools) ## for midpoint rooting
 library(usedist) ## to add labels
 library(ggtree) ## for plotting "nice" trees
 
+setwd("D:/GitHub/Montenegrina_2023/")
 
 ## read Data
 DATA <- read.table("H:/Work/Projects/HaringL/Montenegrina_2023/data/Montenegrina qualitative_data copy.dat",
@@ -30,7 +31,7 @@ DATA <- DATA %>%
     left_join(Colorcode, by = c("Subclade" = "subclade"))
 
 ## focus on columns with Qualitative data and convert to factors
-DATA.matrix <- as.data.frame(DATA[, 7:ncol(DATA) - 1], stringsAsFactors = TRUE)
+DATA.matrix <- as.data.frame(DATA[, 5:ncol(DATA) - 2], stringsAsFactors = TRUE)
 DATA$Num <- seq(1, nrow(DATA), 1)
 DATA$ID2 <- paste(DATA$ID, DATA$Num, sep = "_")
 

@@ -1,4 +1,4 @@
-Color	PCH	ID	c1	Subclade	G_atrium_type	G_penis_types	G_epiphallus_type	G_penial_papilla_type	G_distal_vagina_type	G_proximal_vagina_type	S_neck	S_peristome_position	 S_lam_superior_vs_ spiralis 	S_lam_sub_ bending 	S_lunella_position 	S_plica_basalis	
+Color	Species	ID	c1	Subclade	G_atrium_type	G_penis_types	G_epiphallus_type	G_penial_papilla_type	G_distal_vagina_type	G_proximal_vagina_type	S_neck	S_peristome_position	 S_lam_superior_vs_ spiralis 	S_lam_sub_ bending 	S_lunella_position 	S_plica_basalis	
 Black	1	Montenegrina attemsi Mat-224-01	Montenegrina attemsi HNHM 94429	A	1,0	1,0	1,0	2,0	1,0	1,0	1,0	3,0	1,0	1,0	2,0	2,0	
 Black	1	Montenegrina attemsi Mat-224-02	Montenegrina attemsi HNHM 94429	A	1,0	1,0	1,0	2,0	1,0	1,0	1,0	3,0	1,0	1,0	2,0	2,0	
 Black	22	Montenegrina jakupicensis Mjk-425-01	Montenegrina jakupicensis HNHM 99520	A	2,0	4,0	1,0	3,0	5,0	1,0	2,0	3,0	1,0	1,0	2,0	3,0	

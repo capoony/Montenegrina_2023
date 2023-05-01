@@ -1,4 +1,4 @@
-subclade	Color
+subclade	Clade
 A	#663300
 B	#FFFF00
 C	#FF9900
