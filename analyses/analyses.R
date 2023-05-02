@@ -6,7 +6,7 @@ library(treeio) ## as.treedata
 library(phytools) ## for midpoint rooting
 library(usedist) ## to add labels
 library(ggtree) ## for plotting "nice" trees
-library(readxl) ## read input
+library(readxl) ## read EXCEL input
 
 ## set working directory
 setwd("D:/GitHub/Montenegrina_2023/")
@@ -199,7 +199,7 @@ TREE(
     height = 7
 )
 
-## calculate Hamming Distances and make
+## calculate Hamming Distances and make trees
 Qual.d1d2.dist <- hammingdists(Qual.d1d2)
 Qual.d1d2.dist <- dist_setNames(
     Qual.d1d2.dist, DATA.d1d2$ID2
