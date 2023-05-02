@@ -1,4 +1,4 @@
-### Montenegrina NJ Tree based on qualitative/quantitative morphological characterization
+### Montenegrina NJ Tree based on qualitative/quantitative morphometrics
 
 #### 1) Qualitative Data
 
