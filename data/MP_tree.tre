@@ -1,0 +1,33 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Sun Jul 25 01:37:20 2021]
+[!
+>Consensus of 100000 trees
+>
+>Source of trees from which consensus(es) calculated...
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      6 characters are excluded
+>      Of the remaining 12 included characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        All characters are parsimony-informative
+>    Gaps are treated as "missing"
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+>    Initial swapping on 60625 trees already in memory
+>    Steepest descent option not in effect
+>  'Maxtrees' setting = 100000 (will not be increased)
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>Heuristic search completed
+>  Total number of rearrangements tried = 7159951877
+>  Score of best tree(s) found = 220
+>  Number of trees retained = 100000
+>  Time used = 01:02:20 (CPU time = 01:02:06.3)
+]
+	tree Strict = [&U] (atanasiensis_HNHM_99587,((((((attemsi_MK_311,minuscula_HNHM_94832),gropana_HNHM_99503),(dennisi_dennisi_HNHM99591,drimmeri_HNHM94830,edmundi_HNHM99697,ersekensis_NHMW_110430_MN_0031,golikutensis_NHMW_111215,gregoi_HNHM_99475,klemmi_NHMW_110430_MN_0037,prokletiana_kovacsorum_HNHM_99486,prokletiana_prokletiana_NHMW110430MN0184,skipetarica_HNHM_94914,timeae_HNHM_94856)),cattaroensis_HNHM_41150),perstriata_subcristatula_NHMW110430MN107),globocica_NHMW_110430_MN_0088),cattaroensis_HNHM_99599,csikii_HNHM96845,(dennisi_maasseni_HNHM99595,haringae_NHMW_111220),desaretica_NHMW_111251,(((dofleini_dofleini_NHMW110430MN0040,umbilicata_umbilicata_NHMW_110430_MN_0152),umbilicata_antivaricostata_NHMW_110430_MN_0155),(rugilabris_rugilabris_HNHM99547,sattmanni_sattmanni_HNHM_99585)),(dofleini_fagorum_NHMW110430MN0052,hiltrudae_densicostulata_HNHM_99582,miraka_kontschani_HNHM99634,nana_HNHM_98973),drimica_drimica_HNHM367114167010_3,drimica_drimica_HNHM_36712,drimica_drimica_HNHM_98990,(drimica_drimica_HNHM41149,perstriata_diminuta_NHMW110430MN0101),drimica_drimica_NHMW_110430MN0087,drimica_drimica_NHMW_110430MN0097,((drimica_plenostoma_HNHM_98945,ochridensis_callistoma_HNHM_98954,ochridensis_callistoma_HNHM_98977),ochridensis_callistoma_HNHM_98977a,ochridensis_callistoma_HNHM_98986),flava_HNHM9954,(fuchsi_fuchsi_NHMW_110430_MN_0036,((helvola_carinata_HNHM_99618,helvola_magna_HNHM98962,helvola_pageti_NHMW110430MN0077),helvola_ornata_HNHM99617)),fusca_HNHM_99596,(((gracilis_barinai_HNHM_99008,gracilis_gracilis_HNHM_94887),(tomorosi_coerulescens_NHMW_110430MN0264,tomorosi_tomorosi_HNHM_99724),tomorosi_muranyii_HNHM94847),tropojana_HNHM99493),gramica_improvisa_HNHM_99019,((hiltrudae_protruda_HNHM99593,satmanni_costulata_HNHM99590),janinensis_HNHM99560),iba_HNHM_99036,jakupicensis_HNHM_99520,janinensis_crassilabris_HNHM99561,kastoriae_kastoriae_NHMW_110430_MN_0050,kastoriae_robusta_NHMW_110430_MN_0118,lambdaformis_welterschultesi_NHMW110430MN0316,laxa_HNHM_99033,((lillae_NHMW_11043_MN_0594,(ochridensis_ohridensis_HNHM_36718_2,radikae_radikae_HNHM_31107_7)),miraka_disjuncta_HNHM_99000),miraka_dedovi_MK_580,miraka_delii_NHMW111235,miraka_errans_HNHM_98950,miraka_miraka_HNHM94905,miraka_miraka_HNHM99721,nobilis_HNHM99536,okolensis_caesia_HNHM_94836,okolensis_okolensis_HNHM99614,pallida_NHNM9566,(perstriata_mavrovoensis_NHMW_110430MN0148,soosi_soosi_NHMW110430MN0115),perstriata_perstriata_NHMW110430MN0105,pifkoi_HNHM99466,pindica_HNHM_99524,pinteri_NHMW_110430MN0052_HNHM_99560,prespaensis_NHMW110430MN0134,prespaensis_prespaensis_HNHM12040,prespaensis_sinosi_NHMW110430MN0058,puskasi_gulerulensis_HNHM_99461,puskasi_gulerulensis_NHMW111208,puskasi_puskasi_NHMW_111207,radikae_paparistoae_n._ssp._NHMW_1104300MN0261,remota_HNHM99021,rugilabris_irmengardis_HNHM99552,selcensis_NHMW_111218,stankovici_NHMW_110430_MN_0061,subcristata_Cetjnije_WDM_7273,subcristata_NHMW_11043_MN_0150,subcristata_NHMW_110430_MM_0158,subcristata_NHMW_110430_MN_0121,subcristata_NHMW_110430_MN_0122,subcristata_NHMW_110430_MN_0149,subcristata_NHMW_110430_MN_0143,subcristata_Podgorica_WDM_7231,subcristata_Rijeka_Crnojevica_WDM_7235,subcristata_Virpazar_walls_WDM_7269,tenebrosa_szekeri_n._ssp._HNHM_99007,tenebrosa_tenebrosa_HNHM_98975,voidomatis_konitsae_HNHM99528,voidomatis_thysi_HNHM99632,voidomatis_voidomatis_HNHM99529,zilchi_Mzi_371);
+end;
