@@ -306,7 +306,7 @@ TREE.mp(
     X = Qual.mp.tree,
     Y = DATA.loc2,
     Xlim = 15,
-    Xlab = "MaxiumParsimony",
+    Xlab = "Maximum Parsimony",
     width = 5,
     height = 10
 )
