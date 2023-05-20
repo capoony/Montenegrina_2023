@@ -235,7 +235,7 @@ TREE(
     height = 3
 )
 
-### now plot Gerhards MP tree
+############### Finally, plot Gerhards MP tree
 
 SynTable <- read_excel("data/Montenegrina_rawdata.xlsx",
     sheet = "Tabelle2"
