@@ -1,0 +1,45 @@
+mantel.rtest               package:ade4                R Documentation
+
+_M_a_n_t_e_l _t_e_s_t (_c_o_r_r_e_l_a_t_i_o_n _b_e_t_w_e_e_n _t_w_o _d_i_s_t_a_n_c_e _m_a_t_r_i_c_e_s (_i_n _R).)
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Performs a Mantel test between two distance matrices.
+
+_U_s_a_g_e:
+
+     mantel.rtest(m1, m2, nrepet = 99, ...)
+     
+_A_r_g_u_m_e_n_t_s:
+
+      m1: an object of class ‘dist’
+
+      m2: an object of class ‘dist’
+
+  nrepet: the number of permutations
+
+     ...: further arguments passed to or from other methods
+
+_V_a_l_u_e:
+
+     an object of class ‘rtest’ (randomization tests)
+
+_A_u_t_h_o_r(_s):
+
+     Daniel Chessel
+     Stéphane Dray <mailto:stephane.dray@univ-lyon1.fr>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Mantel, N. (1967) The detection of disease clustering and a
+     generalized regression approach. _Cancer Research_, *27*, 209-220.
+
+_E_x_a_m_p_l_e_s:
+
+         data(yanomama)
+         gen <- quasieuclid(as.dist(yanomama$gen))
+         geo <- quasieuclid(as.dist(yanomama$geo))
+         plot(r1 <- mantel.rtest(geo,gen), main = "Mantel's test")
+         r1
+     
+

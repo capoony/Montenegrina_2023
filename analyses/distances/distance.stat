@@ -1,0 +1,36 @@
+[1] "Geo vs. DNA\n"
+Monte-Carlo test
+Call: mantelnoneuclid(m1 = m1, m2 = m2, nrepet = nrepet)
+
+Observation: 0.2959605 
+
+Based on 10000 replicates
+Simulated p-value: 0.00019998 
+Alternative hypothesis: greater 
+
+      Std.Obs   Expectation      Variance 
+ 4.2453130917 -0.0002669391  0.0048689045 
+[1] "DNA vs. Morph\n"
+Monte-Carlo test
+Call: mantelnoneuclid(m1 = m1, m2 = m2, nrepet = nrepet)
+
+Observation: 0.3119224 
+
+Based on 10000 replicates
+Simulated p-value: 0.00109989 
+Alternative hypothesis: greater 
+
+    Std.Obs Expectation    Variance 
+ 2.70298132  0.00179473  0.01316421 
+[1] "Geo vs. Morph\n"
+Monte-Carlo test
+Call: mantelnoneuclid(m1 = m1, m2 = m2, nrepet = nrepet)
+
+Observation: 0.1412965 
+
+Based on 10000 replicates
+Simulated p-value: 0.02989701 
+Alternative hypothesis: greater 
+
+     Std.Obs  Expectation     Variance 
+2.0459846282 0.0002006167 0.0047558047 
