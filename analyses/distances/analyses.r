@@ -1,25 +1,27 @@
 library(tidyverse)
 library(pheatmap)
-library(ade4)
-library(gridExtra)
+library(ecodist, help, pos = 2, lib.loc = NULL)
 
-
-DATA<-read.table("/media/inter/mkapun/projects/Montenegrina_2023/data/distance.txt",
+### read Data
+DATA<-read.table("/media/inter/mkapun/projects/Montenegrina_2023/data/distance.tsv",
 header=T,
 na.string="NA")
 
+## 
 Geo<-as.dist(xtabs(DATA[, 3] ~ DATA[, 2] + DATA[, 1]))
 DNA<-as.dist(xtabs(DATA[, 4] ~ DATA[, 2] + DATA[, 1]))
 Morph<-as.dist(xtabs(DATA[, 5] ~ DATA[, 2] + DATA[, 1]))
 
 sink("/media/inter/mkapun/projects/Montenegrina_2023/analyses/distances/distance.stat")
-print("Geo vs. DNA\n")
-mantel.rtest(Geo,DNA,nrepet=10000)
-print("DNA vs. Morph\n")
-mantel.rtest(DNA,Morph,nrepet=10000)
-print("Geo vs. Morph\n")
-mantel.rtest(Geo,Morph,nrepet=10000)
+print("DNA vs. Geo")
+mantel(DNA ~ Geo,nperm=1000000)
+print("Morph vs. DNA")
+mantel(Morph ~ DNA,nperm=1000000)
+print("Morph vs. Geo")
+mantel(Morph ~Geo,nperm=1000000)
+#mantel(Morph ~Geo+DNA,nperm=10000)
 sink()
+
 
 pdf("/media/inter/mkapun/projects/Montenegrina_2023/analyses/distances/distance_DNA.pdf")
 pheatmap(as.matrix(DNA))
