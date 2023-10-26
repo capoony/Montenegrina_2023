@@ -62,3 +62,13 @@ pairs(DATA[,c(5,4,3)], panel = panel.lm,
     font.labels = 2, lower.panel = panel.cor)
 
 dev.off()
+
+png("/media/inter/mkapun/projects/Montenegrina_2023/analyses/distances/PairwiseRegression.png",
+    width=2000,
+    height=2000,res=300)
+
+pairs(DATA[,c(5,4,3)], panel = panel.lm,
+    cex = 1.5, pch = 19, col = adjustcolor(4, .4), cex.labels = 2, 
+    font.labels = 2, lower.panel = panel.cor)
+
+dev.off()
