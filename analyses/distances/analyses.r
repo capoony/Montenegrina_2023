@@ -3,7 +3,7 @@ library(pheatmap)
 library(ecodist)
 
 ### read Data
-DATA<-read.table("/media/inter/mkapun/projects/Montenegrina_2023/data/distance.tsv",
+DATA<-read.table("/media/inter/mkapun/projects/Montenegrina_2023/data/distance.txt",
 header=T,
 na.string="NA")
 
@@ -49,15 +49,15 @@ panel.cor <- function(x, y, digits = 2, prefix = "R²: ", cex.cor, ...)
 {
  usr <- par("usr"); on.exit(par(usr))
  par(usr = c(0, 1, 0, 1))
- r <- abs(cor(x, y))**2
+ r <- 100*abs(cor(x, y))**2
  txt <- format(c(r, 0.123456789), digits = digits)[1]
- txt <- paste0(prefix, txt)
+ txt <- paste0(prefix, txt,"%")
  text(0.5, 0.5, txt, cex = 1.1, font = 4)
  }
 
 pdf("/media/inter/mkapun/projects/Montenegrina_2023/analyses/distances/PairwiseRegression.pdf")
 
-pairs(DATA[,c(5,4,3)], panel = panel.lm,
+pairs(na.omit(DATA[,c(5,4,3)]), panel = panel.lm,
     cex = 1.5, pch = 19, col = adjustcolor(4, .4), cex.labels = 2, 
     font.labels = 2, lower.panel = panel.cor)
 
