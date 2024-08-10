@@ -1,4 +1,4 @@
-### Montenegrina NJ Tree based on qualitative/quantitative morphometrics
+### Data analysis of morphometric and genetic data from specimen of the genus _Montenegrina_
 
 #### 1) Qualitative Data
 
