@@ -1,5 +1,7 @@
 ### Data analysis of morphometric and genetic data from specimen of the genus _Montenegrina_
 
+This repository provides the _R_ code for the data analysis in the manuscript [_Quantitative and qualitative statistical analyses of the shell and the genital traits of the doorsnail genus Montenegrina Boettger, 1877 (Gastropoda, Clausiliidae)_[()
+
 #### 1) Qualitative Data
 
 Here, we constructed a distance matrix based on hamming distances across all 12 qualitative characters using the _cultevo_ package in _R_. After that, we used the Neighbor-Joining Method as implemented in the package _phangorn_ to reconstruct a tree and applied midpoint rooting using the package _phytools_. Using the _boot.phylo_ function in the _ape_ package, we performed 100 times bootstrapping prior to plotting the final tree with _ggtree_.
