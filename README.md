@@ -1,6 +1,6 @@
 ### Data analysis of morphometric and genetic data from specimen of the genus _Montenegrina_
 
-This repository provides the _R_ code for the data analysis in the manuscript [_Quantitative and qualitative statistical analyses of the shell and the genital traits of the doorsnail genus Montenegrina Boettger, 1877 (Gastropoda, Clausiliidae)_[()
+This repository provides the _R_ code for the data analysis in the manuscript [_Quantitative and qualitative statistical analyses of the shell and the genital traits of the doorsnail genus Montenegrina Boettger, 1877 (Gastropoda, Clausiliidae)_]()
 
 #### 1) Qualitative Data
 
